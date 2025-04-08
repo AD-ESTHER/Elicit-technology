@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+  }
+  .hero {
+    height: 100vh;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .hero p {
+    font-size: 1.25rem;
+    color: #666;
+  }
+  #offcanvasNavbar{
+    width: 80%;
+  }
+  #dropdown{
+    border: none;
+  
+  }
