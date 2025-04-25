@@ -10,17 +10,29 @@
 </head>
 <style>
 #service1{
-   background-image: url(./IMAGE/image_5.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   object-fit: contain;
-    color: #fff;
-    overflow: hidden;
-    width: 100%;
-    height: 30vh;
+  background-image: url(./IMAGE/rasheeque-ahnaf-piash-fu5SCxTsxmw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  object-fit: contain;
+  color: #fff;
+  overflow: hidden;
+  width: 100%;
+  height: 30vh;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
     }
 
-
+    .overlay2{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 50px;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
 
 </style>
 <body>
@@ -43,7 +55,7 @@
                     About us
                   </a>
                    <ul class="dropdown-menu border-none" id="dropdown">
-                    <li><a class="dropdown-item" href="./page7.html">Health, Safety & Regulatory Complianceh</a></li>
+                    <li><a class="dropdown-item" href="./page7.html">Health, Safety & Regulatory Compliance</a></li>
                     <hr>
                     <li><a class="dropdown-item" href="./page8.html">Operational Management Strategy</a></li>
                     <hr>
@@ -87,10 +99,7 @@
                 <hr>
     
                 <!-- career and contct -->
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> Careers</a>
-                </li>
-                <hr>
+               
                 <li class="nav-item">
                   <a class="nav-link" href="./contact.html">Contact Us</a>
                 </li>
@@ -106,11 +115,8 @@
       
       <!-- section 1 -->
       <div class=" text-center" id="service1">
-        <h2 class="fw-bold "> ABOUT US</h2>
-        
-        
-        
-        
+        <div class="overlay2 shadow">SERVICES</div>
+
           </div>
 
           <!-- section 2 -->
@@ -194,7 +200,7 @@
           <i class="bi bi-envelope" style="font-size:50px ;"></i>
            <h3 class="  fw-normal  " >   Request info about our services</h3>
             
-            <a href="./contact.html" class="btn mt-3  bg-secondary btn-outline-light" id=" btn"> CONTACT US </a>
+            <a href="./contact.html" class="btn mt-3 btn-outline-light" id="button"> CONTACT US </a>
             </div>
           
           </div>

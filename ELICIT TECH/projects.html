@@ -11,15 +11,53 @@
 <style>
 
 #section1{
-   background-image: url(./IMAGE/IMG-20250315-WA0012\ \(1\).jpg);
-   background-repeat: no-repeat;
+   background-image: url(./IMAGE/solar-panel-7518786_1280.jpg);
    background-size: cover;
-   object-fit: contain;
-    color: #fff;
-    overflow: hidden;
-    width: 100%;
-    height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  object-fit: contain;
+  color: #fff;
+  overflow: hidden;
+  width: 100%;
+  height: 30vh;
+  animation: project 10s ease-in  normal infinite;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
     }
+    
+@keyframes project {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.overlay2{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    font-size: 50px;
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+.project-image img {
+      object-fit: cover;
+      width: 100%;
+      height: 30vh;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-image:hover img {
+      transform: scale(1.03);
+    }
+
+    
 
 
 </style>
@@ -44,7 +82,7 @@
                 About us
               </a>
                <ul class="dropdown-menu border-none" id="dropdown">
-                <li><a class="dropdown-item" href="./page7.html">Health, Safety & Regulatory Complianceh</a></li>
+                <li><a class="dropdown-item" href="./page7.html">Health, Safety & Regulatory Compliance</a></li>
                 <hr>
                 <li><a class="dropdown-item" href="./page8.html">Operational Management Strategy</a></li>
                 <hr>
@@ -88,10 +126,7 @@
             <hr>
 
             <!-- career and contct -->
-            <li class="nav-item">
-              <a class="nav-link" href="#"> Careers</a>
-            </li>
-            <hr>
+          
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contact Us</a>
             </li>
@@ -107,56 +142,84 @@
 
 
   <div class=" text-center" id="section1">
-    <h2 class="fw-bold "> PROJECTS</h2>
-    
+    <div class="overlay2">PROJECTS</div>
     
     
     
       </div>
 
+      <section class="container py-5">
+        <div class="text-center mb-5">
+          <h1 class="fw-bold">1MW Solar Hybrid System Installation</h1>
+          <p class="text-muted">Ministry of Power Headquarters (Power House Complex), Abuja</p>
+        </div>
     
-      <section class="container">
-        <h2 class="text-center mb-4">Featured Project</h2>
-        <div class="row align-items-center">
-          
-          <!-- Main Image -->
-          <div class="col-12 col-md-6 col-sm-6" id="img">
-            <img src="./IMAGE/IMG-20250315-WA0012 (1).jpg" class="img-fluid  rounded shadow-sm "  style="width: 200px;" alt="1MW Solar Hybrid Installation">
-            <img src="./IMAGE/IMG-20250315-WA0016.jpg" class="img-fluid rounded shadow-sm "  style="width: 200px;" alt="1MW Solar Hybrid Installation">
-            <img src="./IMAGE/IMG-20250315-WA0011.jpg" class="img-fluid rounded shadow-sm"  style="width: 200px;" alt="1MW Solar Hybrid Installation">
-            
-           
-            <div class="mt-3 d-flex gap-3 flex-wrap " id="img">
-              <img src="./IMAGE/solar-panel-7518786_1280.jpg"class=""  style="width: 200px;" alt="Panel Work">
-              <img src="./IMAGE/IMG-20250315-WA0013.jpg" class="" style="width: 200px;" alt="Battery System">
-              <img src="./IMAGE/IMG-20250315-WA0017 (1).jpg" class="" style="width: 200px;" alt="Wiring Setup">
+        <div class="row g-4 mb-5">
+          <!-- Multiple Images -->
+          <div class="col-md-6 col-lg-4">
+            <div class="project-image shadow">
+              <img src="IMAGE/IMG-20250315-WA0012 (1).jpg" alt="Project Image 1" class="img-fluid">
             </div>
           </div>
-      
-          <!-- Project Description -->
-          <div class="col-12 col-md-6 col-sm-6">
-            <h4 class="mt-3">1MW Solar Hybrid System – Ministry of Power, Abuja</h4>
-            <p>
-              Elicit Technology Infrastructure Limited completed the design and installation of a 1 megawatt solar hybrid energy system 
-              at the Ministry of Power's headquarters, located at the Power House Complex. The project featured a triple-panel configuration with 
-              integrated hybrid grid battery systems, built for energy flexibility and sustainability.
-            </p>
-            <p>
-              Our responsibilities included full system commissioning, alignment with grid supply, and the integration of a custom-built Energy Management System (EMS) 
-              for real-time monitoring of consumption, system performance, and voltage regulation. This ensured energy optimization, reduced costs, 
-              and operational transparency for the client.
-            </p>
-            <p>
-              The project stands as a testament to Elicit's capabilities in renewable infrastructure and intelligent energy solutions for government institutions.
-            </p>
+          <div class="col-md-6 col-lg-4">
+            <div class="project-image shadow">
+              <img src="./IMAGE/IMG-20250315-WA0011.jpg" alt="Project Image 2" class="img-fluid">
+            </div>
           </div>
-      
+          <div class="col-md-6 col-lg-4">
+            <div class="project-image shadow">
+              <img src="./IMAGE/IMG-20250315-WA0014 (1).jpg" alt="Project Image 3" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="project-image shadow">
+              <img src="./IMAGE/IMG_20250407_165826 (1).jpg" alt="Project Image 4" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="project-image shadow">
+              <img src="./IMAGE/IMG_20250407_165721.jpg" alt="Project Image 5" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="project-image shadow">
+              <img src="./IMAGE/IMG_20250407_165642.jpg" alt="Project Image 5"  class="img-fluid">
+            </div>
+          </div>
+        </div>
+    
+        <div class="row">
+          <!-- Text Description -->
+          <div class="col-lg-10 mx-auto">
+            <p>
+              Elicit Technology Infrastructure Limited was commissioned to design, construct, and install a 1 megawatt solar hybrid energy
+              system at the Ministry of Power’s headquarters in Abuja. This landmark project featured a triple-panel array integrated with
+              a battery storage system (BSS), engineered for hybrid grid connectivity.
+            </p>
+            <p>
+              Our role extended beyond physical installation. We ensured the seamless synchronization of the solar panels with the national
+              grid, enabling dual-source energy delivery. As part of the smart infrastructure, Elicit installed a real-time Energy Management
+              System (EMS) that allows for precise monitoring of energy consumption, performance analytics, and voltage regulation—providing
+              the Ministry with enhanced operational visibility and cost control.
+            </p>
+            <p>
+              This project demonstrates our commitment to renewable energy, intelligent infrastructure, and supporting Nigeria’s journey
+              toward sustainable power systems.
+            </p>
+            <div class="text-center mt-4">
+             
+            </div>
+          </div>
         </div>
       </section>
+
+    
+     
+      
       
       <div class="" id="section11">
         <div class="row">
-          <div class="content mt-3 col col-md-3 col-sm-6">
+          <div class="content mt-3 col  col-12 col-sm-6">
             <h3  class="fw-bold text-light" style="font-size: 14px;"> CONTACT US</h3>
         
             <p><i class="bi bi-geo-alt" width="10%"></i>
